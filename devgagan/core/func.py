@@ -85,10 +85,10 @@ async def get_seconds(time_string):
 
 
 PROGRESS_BAR = """\n
-**__Completed__** : {1}/{2}
-**__Bytes__** : {0}%
-**__Speed__** : {3}/s
-**__Time__** : {4}
+**_🎇_Completed__** : {1}/{2}
+**_🌄_Bytes__** : {0}%
+**_🚀_Speed__** : {3}/s
+**_🫶🏻_Time__** : {4}
 """
 
 
@@ -179,7 +179,7 @@ async def userbot_join(userbot, invite_link):
 
 
 def get_link(string):
-    regex = r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
+    regex = r"(?i)\b((?:https?://|www\.|t\.me/)(?:[^\s()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
     url = re.findall(regex,string)   
     try:
         link = [x[0] for x in url][0]
